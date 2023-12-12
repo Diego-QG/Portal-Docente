@@ -103,6 +103,7 @@
                 </constraints>
                 <properties>
                   <alignmentY value="0.0"/>
+                  <icon value="image.signup.png"/>
                   <text value=""/>
                 </properties>
               </component>
@@ -712,6 +713,7 @@
                             </constraints>
                             <properties>
                               <alignmentY value="0.0"/>
+                              <icon value="image.calendarx40.png"/>
                               <text value=""/>
                             </properties>
                           </component>

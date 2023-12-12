@@ -95,6 +95,7 @@
                   </grid>
                 </constraints>
                 <properties>
+                  <icon value="image.login.png"/>
                   <opaque value="false"/>
                   <requestFocusEnabled value="true"/>
                   <text value=""/>
