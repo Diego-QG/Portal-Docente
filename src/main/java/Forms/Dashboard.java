@@ -198,8 +198,15 @@ public class Dashboard extends JFrame {
 
     public static void main(String[] args) {
         Teacher teacher = new Teacher();
+        teacher.setTeacherID("10");
         teacher.setFirstName("Juan");
         teacher.setLastName("Perez");
+        teacher.setGender("Male");
+        teacher.setBirthday(LocalDate.of(1990, 1, 24));
+        teacher.setContactNumber("1234567890");
+        teacher.setJobTitle("Teacher");
+        teacher.setSalary(1000);
+        teacher.setYearsOfExperience(10);
         FlatLightLaf.setup();
 
         new Dashboard(teacher);

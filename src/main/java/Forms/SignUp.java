@@ -4,8 +4,8 @@ import Connection.*;
 import Entities.*;
 
 import static Validation.NameVerifier.verifyName;
-import static Validation.NameVerifier.formatName;
 import static Validation.EmailVerifier.verifyEmail;
+import static Validation.EmailVerifier.formatEmail;
 import static Validation.PasswordVerifier.verifyPassword;
 import static Validation.SPasswordVerifier.verifySPassword;
 import static Validation.GenderVerifier.verifyGender;
@@ -240,9 +240,9 @@ public class SignUp extends JFrame{
 
         Teacher newTeacher = new Teacher();
 
-        String firstName = formatName(jtfFirstName.getText());
-        String lastName = formatName(jtfLastName.getText());
-        String email = jtfEmail.getText();
+        String firstName = jtfFirstName.getText().trim();
+        String lastName = jtfLastName.getText().trim();
+        String email = formatEmail(jtfEmail.getText());
         char[] passwordChars = jpfPassword.getPassword();
         String password = new String(passwordChars);
         char[] sPasswordChars = jpfSPassword.getPassword();
@@ -277,7 +277,7 @@ public class SignUp extends JFrame{
                 return button.getText();
             }
         }
-        return null; // Ninguno seleccionado
+        return null;
     }
 
 }
