@@ -6,14 +6,20 @@ public class ContactNumberVerifier {
 
         contactNumber = contactNumber.trim();
 
-        if(contactNumber.length() < 9) {
-            throw new Exception("The contact number must be at least 9 characters");
-        }else if(contactNumber.length() > 9) {
-            throw new Exception("The contact number cannot be more than 9 characters");
-        }else if(!contactNumber.matches("[0-9]+")){
-            throw new Exception("The contact number can only contain numbers");
-        }else{
+        if (contactNumber == null || contactNumber.isEmpty()) {
             return true;
+        }
+
+        try {
+            int numberValue = Integer.parseInt(contactNumber);
+
+            if (numberValue < 0) {
+                throw new Exception("The contact number cannot be negative");
+            } else {
+                return true;
+            }
+        } catch (NumberFormatException e) {
+            throw new Exception("The contact number must be a valid number");
         }
 
     }

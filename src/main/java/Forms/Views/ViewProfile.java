@@ -300,10 +300,20 @@ public class ViewProfile extends JPanel {
         String year = Objects.requireNonNull(jcboxYear.getSelectedItem()).toString();
         String dateString = day + "-" + month + "-" + year;
         LocalDate birthday = LocalDate.parse(dateString, formatter);
-        String contactNumber = jtfContactNumber.getText().trim();
-        String jobTitle = jtfJobTitle.getText().trim();
-        float salary = Float.parseFloat(jtfSalary.getText().trim());
-        int yearsOfExperience = Integer.parseInt(jtfYearsOfExperience.getText().trim());
+        String contactNumber = jtfContactNumber.getText().isEmpty() ? null : jtfContactNumber.getText().trim();
+        String jobTitle = jtfJobTitle.getText().isEmpty() ? null : jtfJobTitle.getText().trim();
+        float salary;
+        try {
+            salary = Float.parseFloat(jtfSalary.getText().trim());
+        } catch (NumberFormatException e) {
+            salary = 0.0f;
+        }
+        int yearsOfExperience;
+        try {
+            yearsOfExperience = Integer.parseInt(jtfYearsOfExperience.getText().trim());
+        } catch (NumberFormatException e) {
+            yearsOfExperience = 0;
+        }
 
         loggedTeacher.setFirstName(firstName);
         loggedTeacher.setLastName(lastName);

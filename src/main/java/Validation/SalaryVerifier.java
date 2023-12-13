@@ -6,6 +6,10 @@ public class SalaryVerifier {
 
         salary = salary.trim();
 
+        if (salary == null || salary.isEmpty()) {
+            return true;
+        }
+
         try {
             float salaryValue = Float.parseFloat(salary);
 

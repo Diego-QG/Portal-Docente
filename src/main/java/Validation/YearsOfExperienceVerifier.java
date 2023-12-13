@@ -6,12 +6,20 @@ public class YearsOfExperienceVerifier {
 
         yearsOfExperience = yearsOfExperience.trim();
 
-        if(!yearsOfExperience.matches("[0-9]+")){
-            throw new Exception("The years of experience can only contain numbers");
-        }else if(Integer.parseInt(yearsOfExperience) < 0) {
-            throw new Exception("The years of experience cannot be negative");
-        }else{
+        if (yearsOfExperience == null || yearsOfExperience.isEmpty()) {
             return true;
+        }
+
+        try {
+            int yearsExpValue = Integer.parseInt(yearsOfExperience);
+
+            if (yearsExpValue < 0) {
+                throw new Exception("The years of experience cannot be negative");
+            } else {
+                return true;
+            }
+        } catch (NumberFormatException e) {
+            throw new Exception("The years of experience must be a valid number");
         }
 
     }
