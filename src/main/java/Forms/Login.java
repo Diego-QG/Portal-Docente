@@ -48,7 +48,7 @@ public class Login extends JFrame{
         this.setShape(shape);
         setIconImage(new ImageIcon("src/main/resources/image.loginx128.png").getImage());
 
-        SetImageLabel(jlLogoLogin, "src/main/resources/image.loginx128.png", 64, 64);
+        //SetImageLabel(jlLogoLogin, "src/main/resources/image.loginx128.png", 64, 64);
 
 
         jpHeader.addMouseListener(new MouseAdapter() {

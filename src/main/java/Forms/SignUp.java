@@ -76,8 +76,8 @@ public class SignUp extends JFrame{
         this.setShape(shape);
         setIconImage(new ImageIcon("src/main/resources/image.signupx128.png").getImage());
 
-        SetImageLabel(jlLoginSignUp, "src/main/resources/image.signupx128.png", 64, 64);
-        SetImageLabel(jlCalendar, "src/main/resources/image.calendarx128.png", 40, 40);
+        //SetImageLabel(jlLoginSignUp, "src/main/resources/image.signupx128.png", 64, 64);
+        //SetImageLabel(jlCalendar, "src/main/resources/image.calendarx128.png", 40, 40);
 
         jpHeader.addMouseListener(new MouseAdapter() {
             @Override

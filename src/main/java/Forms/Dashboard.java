@@ -36,6 +36,7 @@ public class Dashboard extends JFrame {
     private JPanel jpHeader;
     private JLabel jlX;
     private JButton jbtnStudents;
+    private JButton jbtnSignOut;
     private Teacher loggedTeacher = new Teacher();
     private LocalDate today = LocalDate.now();
     private int xMouse, yMouse;
@@ -66,6 +67,11 @@ public class Dashboard extends JFrame {
         clickGroups(jbtnGroups, loggedTeacher);
         clickStudents(jbtnStudents, loggedTeacher);
 
+        jbtnSignOut.addActionListener(evt -> {
+            new Login();
+            dispose();
+        });
+
 
         setVisible(true);
 
@@ -83,6 +89,7 @@ public class Dashboard extends JFrame {
         applyCursorEffect(jbtnCourses);
         applyCursorEffect(jbtnGroups);
         applyCursorEffect(jbtnStudents);
+        applyCursorEffect(jbtnSignOut);
 
 
     }
