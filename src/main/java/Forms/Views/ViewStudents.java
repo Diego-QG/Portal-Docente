@@ -3,6 +3,7 @@ package Forms.Views;
 import Connection.UConnection;
 import Entities.Alumno;
 import Entities.Teacher;
+import Forms.AddStudent;
 import Forms.Login;
 import Forms.StudentDetails;
 
@@ -74,6 +75,8 @@ public class ViewStudents extends JPanel{
         jbtnShow.addActionListener(evt -> showStudentsInOrder());
 
         jbtnDelete.addActionListener(evt -> deleteStudent());
+
+        jbtnAddStudent.addActionListener(evt -> addNewStudent());
 
     }
 
@@ -357,6 +360,10 @@ public class ViewStudents extends JPanel{
         } catch (Exception e) {
             e.printStackTrace();
         }
+    }
+
+    private void addNewStudent() {
+        new AddStudent(conn);
     }
 
 }

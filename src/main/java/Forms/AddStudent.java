@@ -1,11 +1,15 @@
 package Forms;
 
+import Entities.Alumno;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.awt.geom.RoundRectangle2D;
 import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
 
 public class AddStudent extends JFrame{
     private JPanel jpAddStudent;
@@ -39,6 +43,7 @@ public class AddStudent extends JFrame{
     private JButton btnConfirmChanges;
     private int xMouse, yMouse;
     private Connection conn;
+    private Alumno newStudent;
 
     public AddStudent(Connection conn) {
         super("Add Student");
@@ -94,6 +99,55 @@ public class AddStudent extends JFrame{
             }
 
         });
+
+        btnConfirmChanges.addActionListener(evt -> registerStudent());
+
+        setVisible(true);
+
+    }
+
+    private void registerStudent() {
+        newStudent = new Alumno();
+        String firstName = jtfFirstName.getText();
+        String lastName = jtfLastName.getText();
+        String email = jtfEmail.getText();
+        String phone = jtfPhone.getText();
+        String city = jtfCity.getText();
+        String postalCode = jtfPostalCode.getText();
+        String age = jtfAge.getText();
+        String estate = jtfEstate.getText();
+        String personalAddress = jtfPersonalAddress.getText();
+
+        newStudent.setNombre(firstName);
+        newStudent.setApellido(lastName);
+        newStudent.setCorreoElectronico(email);
+        newStudent.setTelefono(phone);
+        newStudent.setCiudad(city);
+        newStudent.setCodigoPostal(postalCode);
+        newStudent.setEdad(Integer.parseInt(age));
+        newStudent.setEstado(estate);
+        newStudent.setDireccion(personalAddress);
+
+        String sql = "INSERT INTO Student (Firstname, Lastname, Age, Personal_address, City, Estate, Postal_code, Phone, Email) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)";
+
+        try {
+            PreparedStatement pstmt = conn.prepareStatement(sql);
+            pstmt.setString(1, newStudent.getNombre());
+            pstmt.setString(2, newStudent.getApellido());
+            pstmt.setInt(3, newStudent.getEdad());
+            pstmt.setString(4, newStudent.getDireccion());
+            pstmt.setString(5, newStudent.getCiudad());
+            pstmt.setString(6, newStudent.getEstado());
+            pstmt.setString(7, newStudent.getCodigoPostal());
+            pstmt.setString(8, newStudent.getTelefono());
+            pstmt.setString(9, newStudent.getCorreoElectronico());
+            pstmt.executeUpdate();
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+
+        JOptionPane.showMessageDialog(null, "Student added successfully!");
+
     }
 
 }
