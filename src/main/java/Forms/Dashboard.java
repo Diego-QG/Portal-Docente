@@ -1,11 +1,8 @@
 package Forms;
 
 import Entities.Teacher;
-import Forms.Views.ViewCourses;
-import Forms.Views.ViewGroups;
-import Forms.Views.ViewPrincipal;
+import Forms.Views.*;
 
-import Forms.Views.ViewProfile;
 import com.formdev.flatlaf.FlatLightLaf;
 
 import javax.swing.*;
@@ -38,6 +35,7 @@ public class Dashboard extends JFrame {
     private JButton jbtnGroups;
     private JPanel jpHeader;
     private JLabel jlX;
+    private JButton jbtnStudents;
     private Teacher loggedTeacher = new Teacher();
     private LocalDate today = LocalDate.now();
     private int xMouse, yMouse;
@@ -66,6 +64,7 @@ public class Dashboard extends JFrame {
         clickProfile(jbtnProfile, loggedTeacher);
         clickCourses(jbtnCourses, loggedTeacher);
         clickGroups(jbtnGroups, loggedTeacher);
+        clickStudents(jbtnStudents, loggedTeacher);
 
 
         setVisible(true);
@@ -83,6 +82,7 @@ public class Dashboard extends JFrame {
         applyCursorEffect(jbtnProfile);
         applyCursorEffect(jbtnCourses);
         applyCursorEffect(jbtnGroups);
+        applyCursorEffect(jbtnStudents);
 
 
     }
@@ -145,6 +145,15 @@ public class Dashboard extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 showJPanel(new ViewGroups(teacher));
+            }
+        });
+    }
+
+    private void clickStudents(JButton boton, Teacher teacher) {
+        boton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                showJPanel(new ViewStudents(teacher));
             }
         });
     }

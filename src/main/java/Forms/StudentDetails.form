@@ -1,0 +1,590 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="Forms.StudentDetails">
+  <grid id="27dc6" binding="jpStudentDetails" layout-manager="GridLayoutManager" row-count="4" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="500" height="700"/>
+    </constraints>
+    <properties>
+      <background color="-7897255"/>
+      <minimumSize width="500" height="700"/>
+      <preferredSize width="500" height="700"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <grid id="577da" binding="jpHeader" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <minimum-size width="500" height="30"/>
+            <preferred-size width="500" height="30"/>
+            <maximum-size width="500" height="30"/>
+          </grid>
+        </constraints>
+        <properties>
+          <opaque value="false"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="a016d" class="javax.swing.JLabel" binding="jlX">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                <minimum-size width="40" height="30"/>
+                <preferred-size width="40" height="30"/>
+                <maximum-size width="40" height="30"/>
+              </grid>
+            </constraints>
+            <properties>
+              <foreground color="-14803422"/>
+              <horizontalAlignment value="0"/>
+              <horizontalTextPosition value="0"/>
+              <text value="X"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="408a6" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <minimum-size width="400" height="500"/>
+            <preferred-size width="400" height="500"/>
+            <maximum-size width="400" height="500"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-8421505"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <grid id="82990" binding="jpLogo" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="0">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                <minimum-size width="400" height="80"/>
+                <preferred-size width="400" height="80"/>
+                <maximum-size width="400" height="80"/>
+              </grid>
+            </constraints>
+            <properties>
+              <alignmentX value="0.0"/>
+              <alignmentY value="0.0"/>
+              <opaque value="false"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="3d172" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <alignmentY value="0.0"/>
+                  <font name="Roboto Medium" size="20" style="1"/>
+                  <foreground color="-12745361"/>
+                  <text value="Student details"/>
+                </properties>
+              </component>
+              <component id="c8db3" class="javax.swing.JLabel" binding="jlLoginSignUp">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                    <minimum-size width="64" height="64"/>
+                    <preferred-size width="64" height="64"/>
+                    <maximum-size width="64" height="64"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <alignmentY value="0.0"/>
+                  <icon value="image.studentx64.png"/>
+                  <text value=""/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="49e15" binding="jpFormSignUp" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="0">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="true">
+                <minimum-size width="400" height="420"/>
+                <preferred-size width="400" height="420"/>
+                <maximum-size width="400" height="420"/>
+              </grid>
+            </constraints>
+            <properties>
+              <alignmentX value="0.0"/>
+              <alignmentY value="0.0"/>
+              <opaque value="false"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <grid id="c90a3" binding="jpRegister" layout-manager="GridLayoutManager" row-count="7" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="0">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                    <minimum-size width="400" height="350"/>
+                    <preferred-size width="400" height="350"/>
+                    <maximum-size width="400" height="350"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <alignmentX value="0.0"/>
+                  <alignmentY value="0.0"/>
+                  <opaque value="false"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <grid id="a1ad6" binding="jpFullName" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="0">
+                    <margin top="0" left="20" bottom="0" right="20"/>
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                        <minimum-size width="-1" height="50"/>
+                        <preferred-size width="-1" height="50"/>
+                        <maximum-size width="-1" height="50"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <alignmentX value="0.0"/>
+                      <alignmentY value="0.0"/>
+                      <opaque value="false"/>
+                    </properties>
+                    <border type="none"/>
+                    <children>
+                      <grid id="8aa81" binding="jpFirstName" layout-manager="GridLayoutManager" row-count="2" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="0">
+                        <margin top="0" left="0" bottom="0" right="0"/>
+                        <constraints>
+                          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                            <minimum-size width="-1" height="50"/>
+                            <preferred-size width="-1" height="50"/>
+                            <maximum-size width="-1" height="50"/>
+                          </grid>
+                        </constraints>
+                        <properties>
+                          <alignmentX value="0.0"/>
+                          <alignmentY value="0.0"/>
+                          <opaque value="false"/>
+                        </properties>
+                        <border type="none"/>
+                        <children>
+                          <component id="de95" class="javax.swing.JLabel">
+                            <constraints>
+                              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <alignmentY value="0.0"/>
+                              <font name="Roboto Medium" size="14" style="0"/>
+                              <text value="FirstName"/>
+                            </properties>
+                          </component>
+                          <component id="8da06" class="javax.swing.JTextField" binding="jtfFirstName">
+                            <constraints>
+                              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                                <preferred-size width="150" height="-1"/>
+                              </grid>
+                            </constraints>
+                            <properties>
+                              <alignmentX value="0.0"/>
+                              <alignmentY value="0.0"/>
+                            </properties>
+                          </component>
+                          <hspacer id="c3b23">
+                            <constraints>
+                              <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                          </hspacer>
+                        </children>
+                      </grid>
+                      <grid id="c9b8c" binding="jpLastName" layout-manager="GridLayoutManager" row-count="2" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="0">
+                        <margin top="0" left="0" bottom="0" right="0"/>
+                        <constraints>
+                          <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                            <minimum-size width="-1" height="50"/>
+                            <preferred-size width="-1" height="50"/>
+                            <maximum-size width="-1" height="50"/>
+                          </grid>
+                        </constraints>
+                        <properties>
+                          <alignmentX value="0.0"/>
+                          <alignmentY value="0.0"/>
+                          <opaque value="false"/>
+                        </properties>
+                        <border type="none"/>
+                        <children>
+                          <component id="fb306" class="javax.swing.JLabel">
+                            <constraints>
+                              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <alignmentY value="0.0"/>
+                              <font name="Roboto Medium" size="14" style="0"/>
+                              <text value="LastName"/>
+                            </properties>
+                          </component>
+                          <component id="61f3c" class="javax.swing.JTextField" binding="jtfLastName">
+                            <constraints>
+                              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                                <preferred-size width="150" height="-1"/>
+                              </grid>
+                            </constraints>
+                            <properties>
+                              <alignmentX value="0.0"/>
+                              <alignmentY value="0.0"/>
+                            </properties>
+                          </component>
+                          <hspacer id="c3212">
+                            <constraints>
+                              <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                          </hspacer>
+                        </children>
+                      </grid>
+                    </children>
+                  </grid>
+                  <grid id="6c93b" binding="jpEmail" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="0">
+                    <margin top="0" left="20" bottom="0" right="20"/>
+                    <constraints>
+                      <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                        <minimum-size width="-1" height="50"/>
+                        <preferred-size width="-1" height="50"/>
+                        <maximum-size width="-1" height="50"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <alignmentX value="0.0"/>
+                      <alignmentY value="0.0"/>
+                      <opaque value="false"/>
+                    </properties>
+                    <border type="none"/>
+                    <children>
+                      <component id="d3aa7" class="javax.swing.JLabel">
+                        <constraints>
+                          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <alignmentY value="0.0"/>
+                          <font name="Roboto Medium" size="14" style="0"/>
+                          <text value="Email"/>
+                        </properties>
+                      </component>
+                      <component id="5715e" class="javax.swing.JTextField" binding="jtfEmail">
+                        <constraints>
+                          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                            <preferred-size width="150" height="-1"/>
+                          </grid>
+                        </constraints>
+                        <properties>
+                          <alignmentX value="0.0"/>
+                          <alignmentY value="0.0"/>
+                        </properties>
+                      </component>
+                    </children>
+                  </grid>
+                  <grid id="d31df" binding="jpPhone" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="0">
+                    <margin top="0" left="20" bottom="0" right="20"/>
+                    <constraints>
+                      <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                        <minimum-size width="-1" height="50"/>
+                        <preferred-size width="-1" height="50"/>
+                        <maximum-size width="-1" height="50"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <alignmentX value="0.0"/>
+                      <alignmentY value="0.0"/>
+                      <opaque value="false"/>
+                    </properties>
+                    <border type="none"/>
+                    <children>
+                      <component id="c9d3f" class="javax.swing.JLabel">
+                        <constraints>
+                          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <alignmentY value="0.0"/>
+                          <font name="Roboto Medium" size="14" style="0"/>
+                          <text value="Phone"/>
+                        </properties>
+                      </component>
+                      <component id="47c91" class="javax.swing.JTextField" binding="jtfPhone">
+                        <constraints>
+                          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                            <preferred-size width="150" height="-1"/>
+                          </grid>
+                        </constraints>
+                        <properties>
+                          <alignmentX value="0.0"/>
+                          <alignmentY value="0.0"/>
+                        </properties>
+                      </component>
+                    </children>
+                  </grid>
+                  <grid id="a1f37" binding="jpCity" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="0">
+                    <margin top="0" left="20" bottom="0" right="20"/>
+                    <constraints>
+                      <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                        <minimum-size width="-1" height="50"/>
+                        <preferred-size width="-1" height="50"/>
+                        <maximum-size width="-1" height="50"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <alignmentX value="0.0"/>
+                      <alignmentY value="0.0"/>
+                      <opaque value="false"/>
+                    </properties>
+                    <border type="none"/>
+                    <children>
+                      <component id="86286" class="javax.swing.JLabel">
+                        <constraints>
+                          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <alignmentY value="0.0"/>
+                          <font name="Roboto Medium" size="14" style="0"/>
+                          <text value="City"/>
+                        </properties>
+                      </component>
+                      <component id="cf7f9" class="javax.swing.JTextField" binding="jtfCity">
+                        <constraints>
+                          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                            <preferred-size width="150" height="-1"/>
+                          </grid>
+                        </constraints>
+                        <properties>
+                          <alignmentX value="0.0"/>
+                          <alignmentY value="0.0"/>
+                        </properties>
+                      </component>
+                    </children>
+                  </grid>
+                  <grid id="b3e0a" binding="jpPostalCodeAge" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="0">
+                    <margin top="0" left="20" bottom="0" right="20"/>
+                    <constraints>
+                      <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                        <minimum-size width="-1" height="50"/>
+                        <preferred-size width="-1" height="50"/>
+                        <maximum-size width="-1" height="50"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <alignmentX value="0.0"/>
+                      <alignmentY value="0.0"/>
+                      <opaque value="false"/>
+                    </properties>
+                    <border type="none"/>
+                    <children>
+                      <grid id="6ed8e" binding="jpPostalCode" layout-manager="GridLayoutManager" row-count="2" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="0">
+                        <margin top="0" left="0" bottom="0" right="0"/>
+                        <constraints>
+                          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                            <minimum-size width="-1" height="50"/>
+                            <preferred-size width="-1" height="50"/>
+                            <maximum-size width="-1" height="50"/>
+                          </grid>
+                        </constraints>
+                        <properties>
+                          <alignmentX value="0.0"/>
+                          <alignmentY value="0.0"/>
+                          <opaque value="false"/>
+                        </properties>
+                        <border type="none"/>
+                        <children>
+                          <component id="74b02" class="javax.swing.JLabel">
+                            <constraints>
+                              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <alignmentY value="0.0"/>
+                              <font name="Roboto Medium" size="14" style="0"/>
+                              <text value="Postal code"/>
+                            </properties>
+                          </component>
+                          <component id="35856" class="javax.swing.JTextField" binding="jtfPostalCode">
+                            <constraints>
+                              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                                <preferred-size width="150" height="-1"/>
+                              </grid>
+                            </constraints>
+                            <properties>
+                              <alignmentX value="0.0"/>
+                              <alignmentY value="0.0"/>
+                            </properties>
+                          </component>
+                          <hspacer id="92b7">
+                            <constraints>
+                              <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                          </hspacer>
+                        </children>
+                      </grid>
+                      <grid id="e7fde" binding="jpAge" layout-manager="GridLayoutManager" row-count="2" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="0">
+                        <margin top="0" left="0" bottom="0" right="0"/>
+                        <constraints>
+                          <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                            <minimum-size width="-1" height="50"/>
+                            <preferred-size width="-1" height="50"/>
+                            <maximum-size width="-1" height="50"/>
+                          </grid>
+                        </constraints>
+                        <properties>
+                          <alignmentX value="0.0"/>
+                          <alignmentY value="0.0"/>
+                          <opaque value="false"/>
+                        </properties>
+                        <border type="none"/>
+                        <children>
+                          <component id="1761c" class="javax.swing.JLabel">
+                            <constraints>
+                              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <alignmentY value="0.0"/>
+                              <font name="Roboto Medium" size="14" style="0"/>
+                              <text value="Age"/>
+                            </properties>
+                          </component>
+                          <component id="c387" class="javax.swing.JTextField" binding="jtfAge">
+                            <constraints>
+                              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                                <preferred-size width="150" height="-1"/>
+                              </grid>
+                            </constraints>
+                            <properties>
+                              <alignmentX value="0.0"/>
+                              <alignmentY value="0.0"/>
+                              <text value=""/>
+                            </properties>
+                          </component>
+                          <hspacer id="3d1e6">
+                            <constraints>
+                              <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                          </hspacer>
+                        </children>
+                      </grid>
+                    </children>
+                  </grid>
+                  <grid id="e1475" binding="jpEstate" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="0">
+                    <margin top="0" left="20" bottom="0" right="20"/>
+                    <constraints>
+                      <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                        <minimum-size width="-1" height="50"/>
+                        <preferred-size width="-1" height="50"/>
+                        <maximum-size width="-1" height="50"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <alignmentX value="0.0"/>
+                      <alignmentY value="0.0"/>
+                      <opaque value="false"/>
+                    </properties>
+                    <border type="none"/>
+                    <children>
+                      <component id="fcded" class="javax.swing.JLabel">
+                        <constraints>
+                          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <alignmentY value="0.0"/>
+                          <font name="Roboto Medium" size="14" style="0"/>
+                          <text value="Estate"/>
+                        </properties>
+                      </component>
+                      <component id="ed1f6" class="javax.swing.JTextField" binding="jtfEstate">
+                        <constraints>
+                          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                            <preferred-size width="150" height="-1"/>
+                          </grid>
+                        </constraints>
+                        <properties>
+                          <alignmentX value="0.0"/>
+                          <alignmentY value="0.0"/>
+                        </properties>
+                      </component>
+                    </children>
+                  </grid>
+                  <grid id="2d290" binding="jpPersonalAddress" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="0">
+                    <margin top="0" left="20" bottom="0" right="20"/>
+                    <constraints>
+                      <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                        <minimum-size width="-1" height="50"/>
+                        <preferred-size width="-1" height="50"/>
+                        <maximum-size width="-1" height="50"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <alignmentX value="0.0"/>
+                      <alignmentY value="0.0"/>
+                      <opaque value="false"/>
+                    </properties>
+                    <border type="none"/>
+                    <children>
+                      <component id="39844" class="javax.swing.JLabel">
+                        <constraints>
+                          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <alignmentY value="0.0"/>
+                          <font name="Roboto Medium" size="14" style="0"/>
+                          <text value="Personal Address"/>
+                        </properties>
+                      </component>
+                      <component id="f2ebc" class="javax.swing.JTextField" binding="jtfPersonalAddress">
+                        <constraints>
+                          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                            <preferred-size width="150" height="-1"/>
+                          </grid>
+                        </constraints>
+                        <properties>
+                          <alignmentX value="0.0"/>
+                          <alignmentY value="0.0"/>
+                        </properties>
+                      </component>
+                    </children>
+                  </grid>
+                </children>
+              </grid>
+              <grid id="ffa7f" binding="jpBtnConfirmChanges" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="0">
+                <margin top="0" left="50" bottom="0" right="50"/>
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                    <minimum-size width="-1" height="30"/>
+                    <preferred-size width="-1" height="30"/>
+                    <maximum-size width="-1" height="30"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <alignmentX value="0.0"/>
+                  <alignmentY value="0.0"/>
+                  <opaque value="false"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <component id="de783" class="javax.swing.JButton" binding="btnConfirmChanges">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <alignmentY value="0.0"/>
+                      <font name="Roboto Medium" size="14" style="0"/>
+                      <label value="Confirm changes"/>
+                      <text value="Confirm changes"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+            </children>
+          </grid>
+        </children>
+      </grid>
+      <vspacer id="52fe1">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+      <vspacer id="68eb7">
+        <constraints>
+          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+    </children>
+  </grid>
+</form>
